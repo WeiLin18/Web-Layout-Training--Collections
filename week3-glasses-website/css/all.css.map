@@ -4,7 +4,7 @@
     "sources": [
         "all.scss",
         "_resset.scss",
-        "_main.scss",
+        "_base.scss",
         "_index.scss"
     ],
     "names": [],
