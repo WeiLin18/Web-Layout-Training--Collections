@@ -1,0 +1,37 @@
+.bg- {
+    &primary {
+        background-color: $primary;
+    }
+
+    &secondary {
+        background-color: $secondary;
+    }
+}
+
+.logo {
+    @include size(80px, 48px);
+    background: url('../../../assets/images/logo.png') center / cover;
+    @include text-hide;
+
+    @include mobile-576 {
+        @include size(48px, 29px);
+    }
+}
+
+.mobile-show {
+    display: none;
+
+    @include mobile-576 {
+        display: block;
+    }
+}
+
+.text-hover {
+    transition: all 0.1s;
+
+    &:hover {
+        color: $light-gray;
+        text-shadow: 2px 2px $black;
+    }
+
+}

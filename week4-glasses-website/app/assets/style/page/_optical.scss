@@ -1,0 +1,351 @@
+.products__nav {
+    max-width: 1386px;
+    margin: 0 auto;
+}
+
+.products__nav__item {
+    border: 1px solid #DCDCDC;
+
+    &__link {
+        font-size: 42px;
+        position: relative;
+
+        &:hover {
+            background-color: $secondary;
+        }
+
+        @include pad-992 {
+            font-size: 28px;
+        }
+
+        @include mobile-650 {
+            font-size: 20px;
+        }
+
+        @include mobile-576 {
+            font-size: 14px;
+        }
+    }
+
+    &__icon {
+        @include pad-992 {
+            @include size(32px, 32px);
+        }
+
+        @include mobile-576 {
+            @include size(14px, 14px);
+        }
+    }
+}
+
+.active {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 16px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $primary;
+        transition: all .3s;
+
+
+        @include pad-992 {
+            height: 8px;
+        }
+
+        @include mobile-576 {
+            height: 4px;
+        }
+    }
+}
+
+
+
+.products__banner {
+    &__img {
+        width: calc(100%/2 - 15px);
+
+        @include pad-992 {
+            width: 50%;
+        }
+    }
+}
+
+.products__title {
+    font-size: 2rem;
+
+    @include pad-992 {
+        font-size: 1.5rem;
+    }
+
+    @include mobile-576 {
+        font-size: 1rem;
+    }
+
+    &--eng {
+        font-size: 42px;
+
+        @include pad-992 {
+            font-size: 2rem;
+        }
+
+        @include mobile-576 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.products__list {
+    margin-bottom: -104px;
+}
+
+.products__item {
+    width: calc((100% - 90px)/4);
+
+    @include pad-992 {
+        width: calc((100% - 30px)/2);
+    }
+
+    @include mobile-576 {
+        width: 100%;
+    }
+}
+
+.products__item__img {
+    position: relative;
+
+    &:before {
+        content: '查看更多';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(#000, .5);
+        color: #fff;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    }
+}
+
+
+.products__item {
+    &__details {
+        font-size: 1.5rem;
+
+        @include mobile-576 {
+            font-size: 1rem;
+        }
+    }
+
+    &__colors li {
+        @include text-hide;
+        @include size(24px, 24px);
+
+        @include mobile-576 {
+            @include size(16px, 16px);
+        }
+
+        &:nth-child(1) {
+            background-color: #5F3E2D;
+        }
+
+        &:nth-child(2) {
+            background-color: #B75929;
+        }
+    }
+}
+
+
+
+
+
+
+// .products-item-link {
+//     overflow: hidden;
+
+
+// .products-item-name {
+//     flex-grow: 1;
+//     text-transform: uppercase;
+
+//     @include mobile {
+//         font-size: 16px;
+//     }
+// }
+
+// .products-item-price {
+//     color: $primary;
+//     font-weight: 500;
+
+//     @include mobile {
+//         font-size: 16px;
+//     }
+// }
+
+// .products-color-dark,
+// .products-color-light {
+//     @include size(24px, 24px);
+//     border-radius: 4px;
+
+//     @include mobile {
+//         @include size(16px, 16px);
+//     }
+// }
+
+// .products-color-dark {
+//     background-color: $product-dark;
+//     margin-right: 8px;
+
+//     @include mobile {
+//         margin-right: 4px;
+//     }
+// }
+
+// .products-color-light {
+//     background-color: $product-light;
+// }
+
+// // optical 
+// .optical {
+//     &__item {
+//         width: 255px;
+//         margin: 0 15px 104px;
+
+//         @include pad {
+//             width: 330px;
+//             margin: 0 15px 72px;
+//         }
+
+//         @include mobile {
+//             max-width: 345px;
+//             width: 100%;
+//             margin: 0 15px 32px;
+//         }
+//     }
+
+//     &__item-img {
+//         height: 164px;
+//     }
+// }
+
+
+
+
+
+// .series__list-item {
+
+//     a {
+//         padding: 24px 0;
+//         position: relative;
+
+//         &::after {
+//             content: '';
+//             @include size(0, 16px);
+//             transition: all 0.5s;
+//             background-color: $primary-color;
+//             display: block;
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//         }
+
+//         &:hover {
+//             &::after {
+//                 width: 100%;
+//             }
+//         }
+
+//         @include pc-1024 {
+//             padding: 16px;
+
+//             &::after {
+//                 height: 8px;
+//             }
+//         }
+
+//         @include pad-650 {
+//             font-size: 20px;
+//         }
+
+//         @include phone-576 {
+//             padding: 10px 0;
+
+//             &::after {
+//                 height: 4px;
+//             }
+//         }
+//     }
+
+//     a.active {
+//         &::after {
+//             width: 100%;
+//         }
+//     }
+
+//     img {
+//         @include size(48px);
+
+//         @include pc-1024 {
+//             @include size(32px)
+//         }
+
+//         @include phone-576 {
+//             @include size(16px)
+//         }
+
+//         @media (max-width: 320px) {
+//             display: none;
+//         }
+//     }
+// }
+
+// .optical_banner {
+//     li {
+//         height: 309px;
+
+//         &:first-child {
+//             background: url(../images/banner-1.png) no-repeat center;
+//             background-size: cover;
+//         }
+
+//         &:nth-child(2) {
+//             background: url(../images/banner-2.png) no-repeat center;
+//             background-size: cover;
+//         }
+
+//         @include phone-576 {
+//             height: 144px;
+//         }
+//     }
+// }
+
+// .sun_banner {
+//     li {
+//         height: 309px;
+
+//         &:first-child {
+//             background: url(../images/banner-3.png) no-repeat center;
+//             background-size: cover;
+//         }
+
+//         &:nth-child(2) {
+//             background: url(../images/product-2-color.png) no-repeat center;
+//             background-size: cover;
+//         }
+
+//         @include phone-576 {
+//             height: 144px;
+//         }
+//     }
+// }

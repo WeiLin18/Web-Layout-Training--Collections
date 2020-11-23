@@ -1,0 +1,141 @@
+// $space-unit : 4px;
+// ------------------------------padding-top
+@each $level in 12,16{
+    .pt-#{$level} {
+        padding-top: $space-unit * $level;
+    }
+}
+
+@include pad-992 {
+
+    @each $level in 10 {
+        .pt-md-#{$level} {
+            padding-top: $space-unit * $level;
+        }
+    }
+}
+@include mobile-576 {
+
+    @each $level in 6,8 {
+        .pt-sm-#{$level} {
+            padding-top: $space-unit * $level;
+        }
+    }
+}
+
+// ------------------------------padding-bottom
+@each $level in 7,16,20 {
+    .pb-#{$level} {
+        padding-bottom: $space-unit * $level;
+    }
+}
+@include pad-992{
+    @each $level in 3,4,10{
+        .pb-md-#{$level} {
+            padding-bottom: $space-unit * $level;
+        }
+    }
+}
+
+@include mobile-576{
+    @each $level in 1,2,3,5{
+        .pb-sm-#{$level} {
+            padding-bottom: $space-unit * $level;
+        }
+    }
+}
+// ------------------------------padding-right
+@each $level in 10{
+    .pr-#{$level} {
+        padding-right: $space-unit * $level;
+    }
+}
+// ------------------------------padding-xy
+@each $level in 6,8,22 {
+    .px-#{$level} {
+        padding-left: $space-unit * $level;
+        padding-right: $space-unit * $level;
+    }
+}
+
+@each $level in 6,10 {
+    .py-#{$level} {
+        padding-top: $space-unit * $level;
+        padding-bottom: $space-unit * $level;
+    }
+}
+
+@include pad-992 {
+
+    @each $level in 5,10 {
+        .px-md-#{$level} {
+            padding-left: $space-unit * $level;
+            padding-right: $space-unit * $level;
+        }
+    }
+    @each $level in 4 {
+        .py-md-#{$level} {
+            padding-top: $space-unit * $level;
+            padding-bottom: $space-unit * $level;
+        }
+    }
+}
+
+@include mobile-576 {
+    @each $level in 0 {
+        .px-sm-#{$level} {
+            padding-left: $space-unit * $level;
+            padding-right: $space-unit * $level;
+        }
+    }
+
+    @each $level in 2 {
+        .py-sm-#{$level} {
+            padding-top: $space-unit * $level;
+            padding-bottom: $space-unit * $level;
+        }
+    }
+}
+
+@each $level in 2,4,8,9,10,15 {
+    .mr-#{$level} {
+        margin-right: $space-unit * $level;
+    }
+    @include pad-992{
+        @each $level in 3,6 {
+            .mr-md-#{$level} {
+                margin-right: $space-unit * $level;
+            }
+        }
+    }
+    @include mobile-576{
+        @each $level in 0,1 {
+            .mr-sm-#{$level} {
+                margin-right: $space-unit * $level;
+            }
+        }
+    }
+}
+
+@each $level in 1,2,4,5,6,8,10,16,22,26,39 {
+    .mb-#{$level} {
+        margin-bottom: $space-unit * $level;
+    }
+    @include pad-992{
+        @each $level in 1,2,4,5,7,8,10,18,26{
+            .mb-md-#{$level} {
+                margin-bottom: $space-unit * $level;
+            }
+        }
+    }
+    @include mobile-576{
+        @each $level in 2,4,5,8,14 {
+            .mb-sm-#{$level} {
+                margin-bottom: $space-unit * $level;
+            }
+        }
+    }
+}
+
+
+

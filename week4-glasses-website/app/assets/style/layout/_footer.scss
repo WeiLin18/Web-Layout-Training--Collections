@@ -1,0 +1,67 @@
+.footer {
+    &__nav {
+        @include mobile-576 {
+            float: right;
+        }
+    }
+
+    &__navbar li:last-of-type, 
+    &__sharelist li:last-of-type  {
+        margin-right: 0;
+    }
+
+    &__sharelist img {
+        @include size(48px, 48px);
+
+        @include pad-992 {
+            @include size(24px, 24px);
+        }
+    }
+
+
+    &__mainlist {
+        border-bottom: 1px solid #fff;
+    }
+
+    &__mainlist a {
+        font-size: 2.25rem;
+
+        @include pad-992 {
+            font-size: 1.25rem;
+        }
+
+        @include mobile-576 {
+            font-size: 1rem;
+        }
+    }
+
+    &__mainlist img {
+        @include size(48px, 48px);
+
+        @include pad-992 {
+            @include size(32px, 32px);
+        }
+
+        @include mobile-576 {
+            @include size(20px, 20px);
+        }
+    }
+
+}
+
+.copyright__list {
+    & li:last-of-type {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+.copyright {
+    position: relative;
+
+    .mobile-show {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

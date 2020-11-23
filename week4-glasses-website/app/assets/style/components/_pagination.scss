@@ -1,0 +1,31 @@
+.page__item {
+    border: 1px solid #000;
+    border-right: 0px;
+
+    &:last-child {
+        border-right: 1px solid #000;
+        background-color: #F2F2F2;
+    }
+
+    &__link {
+        font-size: 18px;
+        padding: 10px 14px;
+
+        &:hover {
+            background-color: #eee;
+        }
+
+        @include mobile-576 {
+            font-size: 12px;
+            padding: 8px 10px;
+        }
+    }
+
+    &__link--active {
+        background-color: #000;
+        color: #fff;
+        &:hover {
+            background-color: #000;
+        }
+    }
+}

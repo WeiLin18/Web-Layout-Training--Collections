@@ -1,0 +1,65 @@
+    .form {
+        max-width: 730px;
+        margin: 0 auto;
+
+        label {
+            display: block;
+        }
+
+        @include pad-992 {
+            max-width: 600px;
+        }
+
+        @include mobile-768 {
+            max-width: 450px;
+        }
+
+        @include mobile-576 {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+
+
+    }
+
+    .form__button {
+        display: block;
+        width: 48%;
+        line-height: 54px;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $dark-primary;
+        }
+
+        @include pad-992 {
+            width: 46%;
+            line-height: 36px;
+        }
+    }
+
+
+
+    .form__group input,
+    .form__group textarea {
+        width: 100%;
+        background-color: transparent;
+        padding: 14px 16px;
+
+        @include pad-992 {
+            padding: 8px 12px;
+        }
+
+        &:focus {
+            outline-color: $primary;
+        }
+    }
+
+    .form__group textarea {
+        border: 2px solid $gray;
+    }
+
