@@ -879,7 +879,7 @@ h6,
 .logo {
   width: 80px;
   height: 48px;
-  background: url("../../../assets/images/logo.png") center/cover;
+  background: url("../../assets/images/logo.png") center/cover;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap; }
@@ -1046,7 +1046,7 @@ h6,
     bottom: 0; }
 
 .banner {
-  background: url("../../../assets/images/banner.png") center center/cover no-repeat;
+  background: url("../../assets/images/banner.png") center center/cover no-repeat;
   height: 840px; }
   @media (max-width: 576px) {
     .banner {
@@ -1148,7 +1148,7 @@ h6,
     color: #fff; } }
 
 .promotion {
-  background: url(../../../assets/images/bg.png) center center/cover no-repeat; }
+  background: url(../../assets/images/bg.png) center center/cover no-repeat; }
 
 .promotion__item {
   width: calc((100% - 30px) / 2);
