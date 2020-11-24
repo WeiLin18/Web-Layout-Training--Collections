@@ -955,8 +955,7 @@ h6,
   border: 1px solid #000;
   border-right: 0px; }
   .page__item:last-child {
-    border-right: 1px solid #000;
-    background-color: #F2F2F2; }
+    border-right: 1px solid #000; }
   .page__item__link {
     font-size: 18px;
     padding: 10px 14px; }
