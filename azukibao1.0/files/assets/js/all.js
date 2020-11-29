@@ -2,11 +2,12 @@
 
 $(document).ready(function () {
   changeColor();
+  console.log('run');
 });
 
 function changeColor() {
   var page = document.querySelector('#page');
-  var link = document.querySelectorAll('.navbar .nav__link');
+  var link = document.querySelectorAll('.header .nav__link');
   link.forEach(function (e) {
     if (e.getAttribute('data-index') === page.getAttribute('data-index')) {
       e.classList.add('nav__link--active');
