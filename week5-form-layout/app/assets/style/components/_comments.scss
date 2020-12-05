@@ -1,0 +1,46 @@
+.comments {
+    @extend .p-4 ,.pr-8;
+
+    &-title {
+        display: flex;
+        align-items: center;
+        @extend .mb-4;
+    }
+
+    &-pic {
+        @extend .avatar,.mr-2;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-info-name {
+        font-weight: $font-weight-bold;
+        @extend  .mb-1;
+    }
+
+    &-info-time {
+        font-size: $font-size-xs;
+        color: $light-black;
+    }
+
+    &-body {
+        font-size: $font-size-sm;
+        line-height: 1.5;
+        margin-left: 48px; //avatar w + mr-2
+    }
+}
+
+.comments~.comments {
+    position: relative;
+
+    @include after(auto, 1px) {
+        left: 64px;
+        right: 32px;
+        top: 0;
+        background-color: $primary;
+    }
+}

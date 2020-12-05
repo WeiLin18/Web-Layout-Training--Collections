@@ -1,0 +1,67 @@
+.logo {
+    @include size(151px, 40px);
+    background-image: url('../images/logo.svg');
+    @include bg-img;
+}
+
+.avatar {
+    @include size(40px, 40px);
+    @include bg-img;
+    @extend .rounded-circle;
+}
+
+.material-icons {
+    @include size(24px, 24px);
+    @extend .h4,
+    .hover-dark-primary;
+    line-height: 24px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.material-icons-sm {
+    @include size(12px, 12px);
+    line-height: 12px;
+    font-size: 14px;
+}
+
+.code {
+    background-color: $light-primary;
+    color: $dark-primary;
+    font-size: $font-size-sm;
+    font-family: $font-family-monospace;
+}
+
+.form-file {
+    display: inline-block;
+    background-color: $light-primary;
+    border: 1px solid $primary;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+}
+
+.reply {
+    position: absolute;
+    right: 15px;
+    left: 15px;
+    bottom: 8px;
+    opacity: 0;
+    z-index: -1;
+    transition: all .1s ease-in;
+    border: 1px solid $primary;
+    border-radius: 2px;
+    background: #fff;
+    @extend .pb-4;
+
+    &.show {
+        transition: all .1s ease-in;
+        display: block;
+        height: auto;
+        opacity: 1;
+        z-index: 2;
+    }
+}

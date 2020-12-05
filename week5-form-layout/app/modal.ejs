@@ -1,0 +1,82 @@
+<!-- modal -->
+<div class="modal fade" id="newAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">New Admin</h2>
+        <button type="button" class="material-icons" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">clear</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#" methods="post">
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Account</legend>
+            <div class="form-group">
+              <label for="name" class="font-weight-normal">Name</label>
+              <input id="name" type="text" class="form-control"></div>
+            <div class="form-group">
+              <label for="mail" class="font-weight-normal">Email</label>
+              <input id="mail" type="mail" class="form-control"></div>
+          </fieldset>
+
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Verification</legend>
+            <div class="form-group">
+              <div class="form-inline mb-5">
+                <span class="material-icons text-danger mr-2">warning</span>
+                <p>Unverified</p>
+              </div>
+              <button type="button" class="form-control text-dark-primary font-weight-bold border-primary hover-bg-light-primary mb-1">Send
+                Verification Mail</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Access Level</legend>
+            <div class="form-group">
+              <select name="level" class="form-control">
+                <option value="0" selected>-Choose access level-</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Custom Access</legend>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="lecture">
+                <label class="custom-control-label" for="lecture">lecture</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Coupon" id="Coupon">
+                <label class="custom-control-label" for="Coupon">Coupon</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Message" id="Message">
+                <label class="custom-control-label" for="Message">Message</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Setting" id="Setting">
+                <label class="custom-control-label" for="Setting">Setting</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="task menu" id="task">
+                <label class="custom-control-label" for="task">task menu</label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-dark-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

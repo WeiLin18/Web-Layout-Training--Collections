@@ -1,0 +1,21 @@
+.nav-item.active {
+  position: relative;
+  color: $dark-primary;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $dark-primary;
+    width: 4px;
+  }
+}
+
+.nav-link {
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+  @extend .hover-dark-primary,.px-8 ,.py-4;
+}

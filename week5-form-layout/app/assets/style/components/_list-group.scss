@@ -1,0 +1,41 @@
+.list {
+    &-group {
+        border: 1px solid $primary;
+        border-radius: 2px;
+    }
+
+    &-item {
+        border-bottom: 1px solid $primary;
+    }
+
+    &-link {
+        @extend .p-3;
+
+        &-active {
+            background-color: $light-primary;
+        }
+
+        @extend .hover-bg-light-primary;
+    }
+
+    &-item-title{
+        @extend .mb-2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: $font-size-xs;
+    }
+
+    &-item-details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: $font-weight-bold;
+    }
+
+    &-item-user{
+        color: $light-black;
+        font-size: $font-size-xs;
+        font-weight: 400;
+    }
+}
