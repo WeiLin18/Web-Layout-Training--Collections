@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="container-fluid bg-light-primary px-0">
+    <div class="row no-gutters">
+        <!-- nav -->
+      <div class="col-md-3">
+        <nav class="d-flex flex-column vh-100 py-8">
+          <h1 class="mb-4 pl-8"><a href="index.html" class="logo">ANSWER</a></h1>
+
+          <ul>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-icons mr-4">insert_chart</span>Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-icons mr-4">question_answer</span>Question
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              
+              <a href="index.html" class="nav-link" data-link="Assignment">
+                <span class="material-icons mr-4">assignment</span>Assignment
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-icons mr-4">video_library</span>Course
+              </a>
+            </li>
+            
+            <li class="nav-item active">
+              
+              <a href="admin.html" class="nav-link" data-link="Admin">
+                <span class="material-icons mr-4">supervisor_account</span>Admin
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-icons mr-4">settings</span>Settings
+              </a>
+            </li>
+          </ul>
+
+          <div class="d-flex flex-wrap align-items-center mt-auto px-8">
+            <div class="avatar user-pic mr-4">Andy Chen</div>
+            <div>
+              <h3 class="h6 mb-2">Andy Chen</h3>
+              <p class="font-size-sm text-gray">andy0401@mail.com</p>
+            </div>
+          </div>
+          </aside>
+      </div>
+
+
+   <!-- content -->
+      <div class="col-md-9 bg-white">
+
+
+        <!-- header  -->
+        
+        <header class="d-flex align-items-center pt-8 px-8 pb-11">
+  <h2 class="h3 font-weight-bold mr-11">Admin</h2>
+
+  <a href="#" class="h6 font-weight-bold align-middle mr-auto" data-toggle="modal" data-target="#newAdmin">
+    <span class="material-icons text-dark-primary mr-2">add</span>
+    Add New Admin
+  </a>
+  <button type="button" class="material-icons mr-6">search</button>
+  <button type="button" class="material-icons">notifications_active</button>
+</header>
+
+
+        
+        <!-- main -->
+        <main class="px-8">
+
+          
+<table class="table table-hover">
+  <thead>
+      <tr>
+          <th scope="col" class="table-id">ID<span class="material-icons material-icons-sm text-dark-primary ml-2">arrow_downward</span></th>
+          <th scope="col" class="table-name">Name</th>
+          <th scope="col" class="table-email">Email</th>
+          <th scope="col" class="table-verfied">Verfied</th>
+          <th scope="col" class="table-icon">&nbsp;</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>#1</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#2</td>
+          <td class="th">Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#3</td>
+          <td class="th" width="20%">Mahima Lopez</td>
+          <td>Mahima.Lopez@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#4</td>
+          <td>Pharrell Murray</td>
+          <td>Pharrell.Murray@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#5</td>
+          <td>Annika Mcbride</td>
+          <td>Annika.Mcbride@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#6</td>
+          <td>Fatimah Clark</td>
+          <td>Fatimah.Clark@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#7</td>
+          <td>Klaudia Rhodes</td>
+          <td>Klaudia.Rhodes@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#8</td>
+          <td>Tillie Lucero</td>
+          <td>Tillie.Lucero@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#9</td>
+          <td>Sabrina Stephenson</td>
+          <td>Sabrina.Stephenson@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+      <tr>
+          <td>#10</td>
+          <td>Annie Smith</td>
+          <td>Annie.Smith@mail.com</td>
+          <td>Yes</td>
+          <td class="text-md-right">
+              <span class="material-icons mr-6">visibility</span>
+              <span class="material-icons">edit</span>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+
+        </main>
+         
+          
+          <!-- footer -->
+<footer class="mt-16 pb-8">
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end px-8">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous"><span
+           class="material-icons material-icons-md text-dark-primary text-left" aria-hidden="true">chevron_left</span></a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next"><span 
+          class="material-icons text-dark-primary text-left" aria-hidden="true">chevron_right</span></a>
+      </li>
+    </ul>
+  </nav>
+
+</footer>
+          <!-- modal -->
+<div class="modal fade" id="newAdmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">New Admin</h2>
+        <button type="button" class="material-icons" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">clear</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="#" methods="post">
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Account</legend>
+            <div class="form-group">
+              <label for="name" class="font-weight-normal">Name</label>
+              <input id="name" type="text" class="form-control"></div>
+            <div class="form-group">
+              <label for="mail" class="font-weight-normal">Email</label>
+              <input id="mail" type="mail" class="form-control"></div>
+          </fieldset>
+
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Verification</legend>
+            <div class="form-group">
+              <div class="form-inline mb-5">
+                <span class="material-icons text-danger mr-2">warning</span>
+                <p>Unverified</p>
+              </div>
+              <button type="button" class="form-control text-dark-primary font-weight-bold border-primary hover-bg-light-primary mb-1">Send
+                Verification Mail</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="border-bottom pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Access Level</legend>
+            <div class="form-group">
+              <select name="level" class="form-control">
+                <option value="0" selected>-Choose access level-</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="pb-2 mb-6">
+            <legend class="h5 font-weight-bold mb-4">Custom Access</legend>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="lecture">
+                <label class="custom-control-label" for="lecture">lecture</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Coupon" id="Coupon">
+                <label class="custom-control-label" for="Coupon">Coupon</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Message" id="Message">
+                <label class="custom-control-label" for="Message">Message</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="Setting" id="Setting">
+                <label class="custom-control-label" for="Setting">Setting</label>
+              </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input class="custom-control-input" type="checkbox" value="task menu" id="task">
+                <label class="custom-control-label" for="task">task menu</label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-dark-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
