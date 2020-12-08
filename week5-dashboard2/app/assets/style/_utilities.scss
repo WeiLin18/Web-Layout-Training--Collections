@@ -1,0 +1,50 @@
+.lh-2 {
+  line-height: 2;
+}
+
+.font-size {
+  &-sm {
+    font-size: $font-size-sm;
+  }
+
+  &-xs {
+    font-size: $font-size-xs;
+  }
+}
+
+.hover-dark-primary {
+  &:hover {
+    color: $dark-primary;
+  }
+}
+
+.hover-bg-light-primary {
+  &:hover {
+    background-color: $light-primary;
+  }
+}
+
+
+.list-disc {
+  list-style-position: inside;
+  list-style-type: disc;
+  text-indent: 2rem;
+}
+
+.no-hover {
+  &:hover {
+    color: black;
+  }
+}
+
+.mt-16 {
+  margin-top: $spacer * 16;
+}
+
+.student-pic {
+  background-image: url('../images/emilywang.jpeg');
+}
+
+.user-pic {
+  background-image: url('../images/andychen.jpeg');
+}

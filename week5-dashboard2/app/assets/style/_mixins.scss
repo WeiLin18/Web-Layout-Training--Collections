@@ -1,0 +1,40 @@
+
+@mixin size($w:80px, $h:48px) {
+  width: $w;
+  height: $h;
+}
+
+@mixin before($width, $height) {
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+    display: inline-block;
+
+    @content;
+  }
+}
+@mixin after($width, $height) {
+  &::after {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+    display: inline-block;
+
+    @content;
+  }
+}
+
+@mixin text-hide {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin bg-img {
+  background-size: cover;
+  background-position: center center;
+  @include text-hide;
+}
