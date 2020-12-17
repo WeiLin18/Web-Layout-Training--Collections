@@ -13215,7 +13215,7 @@ button {
   font-size: 100%;
   font: inherit; }
 
-input:focus {
+input:focus, button:focus {
   outline: none; }
 
 .hover__color--primary:hover {
