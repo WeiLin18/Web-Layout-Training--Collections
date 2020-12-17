@@ -1,0 +1,10 @@
+.banner{
+    height: 870px;
+    background: url(../images/banner.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include media-breakpoint-down(sm) { 
+       height: 480px;
+      }
+}
+

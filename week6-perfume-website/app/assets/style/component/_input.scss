@@ -1,0 +1,20 @@
+.custom__input {
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 16px;
+
+    &--email {
+        color: $info;
+        border: 1px solid $primary;
+        border-radius: 4px 0 0 4px;
+    }
+
+    &--send {
+        background-color: $primary;
+        color: #fff;
+        border-radius: 0 4px 4px 0;
+        &:hover {
+            background-color: darken($primary, 5%);
+        }
+    }
+}

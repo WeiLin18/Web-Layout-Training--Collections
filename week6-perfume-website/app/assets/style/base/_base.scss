@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  outline: 1px solid #f0a;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  position: relative;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+button{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}

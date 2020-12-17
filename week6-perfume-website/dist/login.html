@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登入</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <!-- header -->
+
+<header class="sticky-top bg-white">
+  <div class="container">
+    <div class="row">
+      <nav class="col-12 navbar navbar-expand-md navbar-light">
+        <h1><a href="index.html" class="logo">D'Perfume</a></h1>
+
+        <a class="text-secondary d-inline-block d-md-none ml-auto pr-3 position-relative" href="#">
+          <span class="material-icons align-middle">shopping_cart</span>
+          <span class="badge badge-pill badge-primary position-absolute" style="top:-5px;right:-15px">3</span>
+        </a>
+        <button class="navbar-toggler p-4" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link mr-md-3" href="shop.html" data-page="product">
+                <span class="material-icons d-none d-md-inline-block align-middle">store</span>Product
+              </a>
+            </li>
+            <li class="nav-item d-md-block d-none">
+              <a class="nav-link mr-md-3">
+                <span class="material-icons align-middle">person</span>log in
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-md-3" href="#">
+                <span class="material-icons align-middle">favorite</span>Wishlist
+              </a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link mr-md-3" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link mr-md-3" href="#">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link mr-md-3" href="#">
+                Mypage
+              </a>
+            </li>
+            <li class="nav-item d-md-block d-none">
+              <a class="nav-link" href="#">
+                <span class="material-icons align-middle">shopping_cart</span>Cart(3)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  
+
+  <main>
+    
+
+<div class="bg-primary mb-11 mb-md-15">
+    <ul class="container d-none d-md-flex">
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">CHANEL</a></li>
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">Jo Malone</a></li>
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">Curology</a></li>
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">Dior</a></li>
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">Chloe</a></li>
+        <li><a class="text-white text-lg hover__bg--secondary p-4" href="">ZARA</a></li>
+    </ul>
+</div>
+<div class="container  mb-md-15">
+    <div class="row align-items-center">
+        <div class=" col-md-8 mb-8 mb-md-0">
+            <img class="img-fluid" src="assets/images/login.jpg" alt=" 登入">
+        </div>
+        <div class=" col-md-4 mb-16 mb-md-0">
+            <h3 class="text-3xl mb-4">Log in</h3>
+            <form class="js-login-form">
+                <div class="form-group">
+                    <label for="account">帳號</label>
+                    <input type="email" class="form-control js-account" id="account" name="account"
+                        aria-describedby="emailHelp" placeholder="email@example.com" required>
+
+                </div>
+                <div class="form-group mb-10">
+                    <label for="Password">密碼</label>
+                    <input type="password" name="password" class="form-control js-password" id="Password"
+                        placeholder="Password" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="">忘記密碼</a>
+                    <div class="d-flex">
+                        <button class="btn border-primary text-primary hover__bg--primary rounded mr-3">註冊</button>
+                        <button type="submit" class="btn btn-primary rounded js-login-click">登入</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    
+  </main>
+
+  
+
+
+  <!-- footer -->
+<footer class="bg-primary">
+    <div class="container no-gutter">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center py-5 py-md-0">
+          <h2><a class="logo logo--white mr-6 mr-md-5" href="index.html">D'Perfume</a></h2>
+          <p class='small text-white'>© 2020. All Rights Reserved.</p>
+        </div>
+        <ul class="d-none d-md-flex h5 text-white">
+          <li class="mr-9"><a class="py-7" href="shop.html" data-page="product">Product</a></li>
+          <li class="mr-9"><a class="py-7" href="#">Blog</a></li>
+          <li><a class="py-7" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+  <script src="./assets/js/all.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+</body>
+
+</html>

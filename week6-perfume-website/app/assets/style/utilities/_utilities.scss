@@ -1,0 +1,64 @@
+.hover__color {
+    &--primary {
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    &--secondary {
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    &--gray {
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.hover{
+    &__bg--gray {
+        &:hover {
+            background-color: $light;
+        }
+    }
+
+    &__scale--bigger {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__filter--lighter {
+        &:hover {
+            filter: brightness(1.05);
+        }
+    }
+}
+
+.filter__brightness--dark {
+    filter: brightness(0.8);
+}
+
+
+@include media-breakpoint-only(sm) {
+    .container__md--sm {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+}
+
+.lh-lg {
+    line-height: 1.5;
+}
+
+// javascript
+.link--active,
+.link--active:hover {
+    text-decoration: underline;
+    color: #fff;
+
+}
