@@ -13215,6 +13215,9 @@ button {
   font-size: 100%;
   font: inherit; }
 
+input:focus {
+  outline: none; }
+
 .hover__color--primary:hover {
   color: #916000; }
 
@@ -13257,10 +13260,10 @@ button {
 .custom__input {
   width: 100%;
   font-size: 16px;
-  padding: 20px 16px; }
+  padding: 20px 16px;
+  border: 1px solid #916000; }
   .custom__input--email {
     color: #8D8D8D;
-    border: 1px solid #916000;
     border-radius: 4px 0 0 4px; }
   .custom__input--send {
     background-color: #916000;

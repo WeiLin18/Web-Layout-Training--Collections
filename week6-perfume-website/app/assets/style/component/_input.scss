@@ -2,10 +2,11 @@
     width: 100%;
     font-size: 16px;
     padding: 20px 16px;
+    border: 1px solid $primary;
+
 
     &--email {
         color: $info;
-        border: 1px solid $primary;
         border-radius: 4px 0 0 4px;
     }
 
