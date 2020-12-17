@@ -13175,11 +13175,6 @@ a.text-gray-light:hover, a.text-gray-light:focus {
     color: inherit;
     border-color: #8D8D8D; } }
 
-*,
-*::before,
-*::after {
-  outline: 1px solid #f0a; }
-
 body {
   font-size: 1rem;
   font-family: "SF Pro Text", PingFang, Roboto, "Noto Sans TC", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
