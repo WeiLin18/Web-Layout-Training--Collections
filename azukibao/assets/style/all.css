@@ -226,7 +226,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-.pattern-right:after, .container--introduce:after {
+.pattern-right:after {
   content: '';
   position: absolute;
   width: 39px;
@@ -236,7 +236,7 @@ img {
   right: 0; }
 
 @media (max-width: 992px) {
-  .pattern-right:after, .container--introduce:after {
+  .pattern-right:after {
     width: 0; } }
 
 .mb-1 {

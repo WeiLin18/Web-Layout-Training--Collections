@@ -3,17 +3,18 @@
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 $(document).ready(function () {
-  console.log('run'); // changeColor();
-  // console.log(document.title);
-  // if(document.title ==='首頁' | document.title ==='嚴選食材'){
-  //   materialSwiper();
-  // }
-  // if($(document.title)){}
+  console.log('run');
+  changeColor();
 });
 
 function changeColor() {
   var page = document.querySelector('#page');
   var link = document.querySelectorAll('.header .nav__link');
+
+  if (!page) {
+    return;
+  }
+
   link.forEach(function (e) {
     if (e.getAttribute('data-index') === page.getAttribute('data-index')) {
       e.classList.add('nav__link--active');

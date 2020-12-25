@@ -107,27 +107,31 @@
     </div>
   </section>
   <!-- --------------popular-------------------- -->
-  <section class="popular bg-pattern py-16">
-    <div
-      class="container container-s bg-white bg-shoadow d-flex justify-content-between align-items-center po-re py-20">
-      <div class="w-55">
-        <div class="popular__img"></div>
-      </div>
-      <div class="label popular__label po-ab">人氣NＯ.1</div>
-      <div>
-        <h2 class="h1">經典豆沙包</h2>
-        <h3 class="h4 mb-4">小火慢熬的紅豆，手工揉製的麵團</h3>
-        <ul class="h6">
-          <li>成分：麵粉、老麵、紅豆、芝麻、沙拉油、水、糖、鹽</li>
-          <li>過敏原：本產品含麩質之穀物、芝麻及其製品</li>
-          <li>保存方式：須冷凍於-18℃以下</li>
-          <li>最佳賞味期：一個月，開封後請儘速食用以確保品質</li>
-        </ul>
+  <section class="banner bg-pattern py-16">
+    <div class="container container--introduce mb-12">
+      <div class="introduce">
+        <div class="introduce__pic po-re">
+          <div class="introduce__pic__img introduce__pic__img--1"></div>
+          <div class="label introduce__pic__label">人氣NＯ.1</div>
+        </div>
+        <div>
+          <div class="d-flex align-items-center justify-content-between">
+            <h2 class="h1">經典豆沙包</h2>
+            <h3 class="h4"><span class="dollor">NT</span>35元</h3>
+          </div>
+          <h3 class="h4 font-xl-h5 mb-4">小火慢熬的紅豆，手工揉製的麵團</h3>
+          <ul class="h6">
+            <li>成分：麵粉、老麵、紅豆、芝麻、沙拉油、水、糖、鹽</li>
+            <li>過敏原：本產品含麩質之穀物、芝麻及其製品</li>
+            <li>保存方式：須冷凍於-18℃以下</li>
+            <li>最佳賞味期：一個月，開封後請儘速食用以確保品質</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
   <!-- --------------products-------------------- -->
-  <section class="products bg-light-gray pt-10 pb-16">
+  <section class="bg-light-gray pt-10 pb-16">
     <div class="container">
       <h2 class="section__title">商品一覽</h2>
       <!-- --------------products-nav-------------------- -->
@@ -283,62 +287,135 @@
     </div>
   </section>
     <!-- --------------material-------------------- -->
-    <section class="material bg-light-gray py-16" id="carouselExampleIndicators">
-      <div class="container container-s bg-white po-re pt-30 pb-23">
-        <div class="material__details">
-          <h2 class="h1 mb-12">我們選用的食材</h2>
-          <p class="h5 mb-15">
-            創立於1987年的包子本鋪<br>
-            藏身於中山區巷弄中<br>
-            最初，是一對老夫妻騎著腳踏車沿路叫賣<br>
-            不需要任何廣告或顯眼的招牌<br>
-            腳踏車上插著妻子手染的紅色旗子<br>
-            那塊隨風飄揚的朱紅便是包子本鋪最顯眼的招牌
-          </p>
-          <ol class="carousel__indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0"
-              class="carousel__indicators__item carousel__indicators__item--active">食材</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="carousel__indicators__item">麵</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="carousel__indicators__item">麻</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="carousel__indicators__item">豆</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4" class="carousel__indicators__item">芋</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5" class="carousel__indicators__item">落</li>
-          </ol>
+    <section class="banner bg-light-gray py-16" id="carouselExampleIndicators">
+        <!-- Swiper -->
+    <div class="swiper-container container bg-white bg-shoadow ">
+      <div class="swiper-wrapper">
+        <!-- swiper-slide1 -->
+        <div class="swiper-slide container-s d-flex align-items-center">
+          <!-- material__details -->
+          <div>
+            <h2 class="h1 mb-12">我們選用的食材</h2>
+            <p class="h5">
+              創立於1987年的包子本鋪<br>
+              藏身於中山區巷弄中<br>
+              最初，是一對老夫妻騎著腳踏車沿路叫賣<br>
+              不需要任何廣告或顯眼的招牌<br>
+              腳踏車上插著妻子手染的紅色旗子<br>
+              那塊隨風飄揚的朱紅便是包子本鋪最顯眼的招牌
+            </p>
+          </div>
+          <!-- material__list -->
+          <ul>
+            <li class="material__item material__item--flour">
+              <a href="#">
+                <img src="./assets/images/material1.svg" alt="flour">
+                <p class="material__item__word">麵</p>
+              </a>
+            </li>
+            <li class="material__item material__item--ma">
+              <a href="#">
+                <img src="./assets/images/material2.svg" alt="ma">
+                <p class="material__item__word">麻</p>
+              </a>
+            </li>
+            <li class="material__item material__item--azuki">
+              <a href="material-azuki.html">
+                <img src="./assets/images/material3.svg" alt="azuki">
+                <p class="material__item__word">豆</p>
+              </a>
+            </li>
+            <li class="material__item material__item--taro">
+              <a href="#">
+                <img src="./assets/images/material4.svg" alt="taro">
+                <p class="material__item__word">芋</p>
+              </a>
+            </li>
+            <li class="material__item material__item--peanut">
+              <a href="#">
+                <img src="./assets/images/material5.png" alt="peanut">
+                <p class="material__item__word">落</p>
+              </a>
+            </li>
+          </ul>
         </div>
-  
-        <ul class="material__list">
-          <li class="material__list__item flour po-ab">
-            <a href="#">
-              <img src="./assets/images/material1.svg" alt="flour">
-              <p class="material__list__item__word">麵</p>
-            </a>
-          </li>
-          <li class="material__list__item ma po-ab">
-            <a href="#">
-              <img src="./assets/images/material2.svg" alt="ma">
-              <p class="material__list__item__word">麻</p>
-            </a>
-          </li>
-          <li class="material__list__item azuki po-ab">
-            <a href="#">
-              <img src="./assets/images/material3.svg" alt="azuki">
-              <p class="material__list__item__word">豆</p>
-            </a>
-          </li>
-          <li class="material__list__item taro po-ab">
-            <a href="#">
-              <img src="./assets/images/material4.svg" alt="taro">
-              <p class="material__list__item__word">芋</p>
-            </a>
-          </li>
-          <li class="material__list__item peanut po-ab">
-            <a href="#">
-              <img src="./assets/images/material5.png" alt="peanut">
-              <p class="material__list__item__word">落</p>
-            </a>
-          </li>
-        </ul>
+        <!-- swiper-slide2 -->
+        <div class="swiper-slide  banner--material banner--material--flour">
+          <div class="banner__card banner__card--material">
+            <h2 class="h1 mb-9">老麵</h2>
+            <p class="h5 font-xs-h6">
+              小豆包子最靈魂的食材，紅豆<br>
+              來自台灣的最南端，屏東萬丹<br>
+              飽滿的小紅豆，小火拌煮成朱紅豆沙<br>
+              再以手工包餡，製成粒粒飽滿的豆沙包<br>
+              一口咬下味香濃溢，入口綿綿<br>
+              是台灣的囡仔最懷念的甜蜜滋味
+            </p>
+          </div>
+        </div>
+        <!-- swiper-slide3 -->
+        <div class="swiper-slide  banner--material banner--material--ma">
+          <div class="banner__card banner__card--material">
+            <h2 class="h1 mb-9">芝麻</h2>
+            <p class="h5 font-xs-h6">
+              小豆包子最靈魂的食材，紅豆<br>
+              來自台灣的最南端，屏東萬丹<br>
+              飽滿的小紅豆，小火拌煮成朱紅豆沙<br>
+              再以手工包餡，製成粒粒飽滿的豆沙包<br>
+              一口咬下味香濃溢，入口綿綿<br>
+              是台灣的囡仔最懷念的甜蜜滋味
+            </p>
+          </div>
+        </div>
+        <!-- swiper-slide4 -->
+        <div class="swiper-slide banner--material banner--material--azuki">
+          <div class="banner__card banner__card--material">
+            <h2 class="h1 mb-9">紅豆</h2>
+            <p class="h5 font-xs-h6">
+              小豆包子最靈魂的食材，紅豆<br>
+              來自台灣的最南端，屏東萬丹<br>
+              飽滿的小紅豆，小火拌煮成朱紅豆沙<br>
+              再以手工包餡，製成粒粒飽滿的豆沙包<br>
+              一口咬下味香濃溢，入口綿綿<br>
+              是台灣的囡仔最懷念的甜蜜滋味
+            </p>
+          </div>
+        </div>
+        <!-- swiper-slide5 -->
+        <div class="swiper-slide banner--material banner--material--taro">
+          <div class="banner__card banner__card--material">
+            <h2 class="h1 mb-9">芋頭</h2>
+            <p class="h5 font-xs-h6">
+              小豆包子最靈魂的食材，紅豆<br>
+              來自台灣的最南端，屏東萬丹<br>
+              飽滿的小紅豆，小火拌煮成朱紅豆沙<br>
+              再以手工包餡，製成粒粒飽滿的豆沙包<br>
+              一口咬下味香濃溢，入口綿綿<br>
+              是台灣的囡仔最懷念的甜蜜滋味
+            </p>
+          </div>
+        </div>
+        <!-- swiper-slide6 -->
+        <div class="swiper-slide  banner--material banner--material--peanut">
+          <div class="banner__card banner__card--material">
+            <h2 class="h1 mb-9">花生</h2>
+            <p class="h5 font-xs-h6">
+              小豆包子最靈魂的食材，紅豆<br>
+              來自台灣的最南端，屏東萬丹<br>
+              飽滿的小紅豆，小火拌煮成朱紅豆沙<br>
+              再以手工包餡，製成粒粒飽滿的豆沙包<br>
+              一口咬下味香濃溢，入口綿綿<br>
+              是台灣的囡仔最懷念的甜蜜滋味
+            </p>
+          </div>
+        </div>
       </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
     </section>
   <!-- --------------shop-------------------- -->
   <section class="shop pt-10 pb-16">
