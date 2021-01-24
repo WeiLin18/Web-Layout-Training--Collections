@@ -1,22 +1,21 @@
 @import 'helpers/variables';
 @import 'helpers/mixin';
+
 @import 'base/reset';
 @import 'base/base';
+
 @import 'layout/grid';
 
-
-@import 'helpers/display';
-@import 'helpers/spacing';
-@import 'helpers/text';
-@import 'helpers/others';
-
-
-@import 'components/form';
-@import 'components/pagination';
-
+@import 'utilities/display';
+@import 'utilities/spacing';
+@import 'utilities/text';
+@import 'utilities/others';
 
 @import 'layout/header';
 @import 'layout/footer';
+
+@import 'components/form';
+@import 'components/pagination';
 
 
 @import 'page/index';
