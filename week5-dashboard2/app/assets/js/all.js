@@ -5,7 +5,7 @@
 
   textEditBtn.addEventListener('click', function () {
     if (!textEdit.classList.contains('show')) {
-      textEdit.classList.add('show');
+      textEdit.classList.add('show')
     }else {return;}
   })
 
